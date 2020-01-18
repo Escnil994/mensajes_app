@@ -10,9 +10,7 @@ public class Conexion {
         Connection conection = null;
         try{
             conection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensaje_app","root","");
-            if(conection != null){
-                JOptionPane.showMessageDialog(null, "Exitoso");
-            }
+            
         }catch(SQLException e){
             
             JOptionPane.showMessageDialog(null, "Error  \n" + e);
