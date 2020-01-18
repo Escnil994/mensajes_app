@@ -26,6 +26,25 @@ public class Inicio {
             //Leemos la opcion del usuacrio
             opcion = sc.nextInt();
             
+            switch (opcion){
+                case 1:
+                    MensajesService.CcrearMensaje();
+                    break;
+                case 2: 
+                    MensajesService.listarMensajes();
+                    break;
+                case 3:
+                    MensajesService.editarMensajes();
+                    break;
+                case 4:
+                    MensajesService.borrarMensaje();
+                    break;
+                default:
+                    break;
+                    
+                    
+            }
+            
         }while(opcion != 5);
        
     }
